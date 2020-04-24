@@ -22,6 +22,10 @@ func (c *UserController) Get() {
 	o := orm.NewOrm()
 	user := models.User{Id: 1}
 	err := o.Read(&user)
+	if err == orm.ErrMissPK {
+		fmt.Println("1")
+	}
 	c.Data["json"] = user
 	c.ServeJSON()
+
 }

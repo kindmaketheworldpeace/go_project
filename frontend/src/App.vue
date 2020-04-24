@@ -13,13 +13,12 @@ export default {
 <style>
 body {
 	 height:100vh;
-	width:100vh
 }
 .header {
-	height:30%;
+	height:10%;
 	width:100%;
-	background-color:green
-	
+	background-color:green;
+	position: fixed;
 	}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -27,7 +26,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 width:100%;
 height:100%
 }

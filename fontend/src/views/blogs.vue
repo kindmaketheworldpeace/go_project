@@ -13,7 +13,7 @@
       {{ page }}
     </div>
 
-    <div style="float: right" class="uk-width-medium-1-4">
+    <div style="float: right;width: 24%" class="uk-width-medium-1-4">
       <div class="uk-panel uk-panel-header">
         <h3 class="uk-panel-title">友情链接</h3>
         <ul class="uk-list uk-list-line">

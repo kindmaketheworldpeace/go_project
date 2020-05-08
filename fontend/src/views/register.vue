@@ -44,6 +44,9 @@
         password1: '',
         password2: ''
       }
+    },
+    methods:{
+      
     }
   }
 </script>

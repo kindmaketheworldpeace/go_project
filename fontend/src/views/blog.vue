@@ -1,5 +1,6 @@
 <template>
   <div style="width: 100%">
+  <div style="width: 75%;display: inline-block">
     <div class="uk-width-medium-3-4">
       <article class="uk-article">
         <h2>{{ blog.name }}</h2>
@@ -43,7 +44,8 @@
                 <header class="uk-comment-header">
                   <img class="uk-comment-avatar uk-border-circle" width="50" height="50"
                        :src="comment.user_image">
-                  <h4 class="uk-comment-title">{{ comment.user_name }} <p v-if="comment.user_id==blog.user_id">作者</p></h4>
+                  <h4 class="uk-comment-title">{{ comment.user_name }} <p v-if="comment.user_id==blog.user_id">作者</p>
+                  </h4>
                   <p class="uk-comment-meta">{{ comment.created_at }}</p>
                 </header>
                 <div class="uk-comment-body">
@@ -68,18 +70,19 @@
           <h3>{{ blog.user_name }}</h3>
         </div>
       </div>
-      <div style="float: right" class="uk-panel uk-panel-header">
-        <h3 class="uk-panel-title">友情链接</h3>
-        <ul class="uk-list uk-list-line">
-          <li><i class="uk-icon-link"></i> <a href="#">编程</a></li>
-          <li><i class="uk-icon-link"></i> <a href="#">思考</a></li>
-          <li><i class="uk-icon-link"></i> <a href="#">读书</a></li>
-        </ul>
-      </div>
     </div>
 
-  </div>
 
+  </div>
+   <div style="width: 24%;float: right" class="uk-panel uk-panel-header">
+      <h3 class="uk-panel-title">友情链接</h3>
+      <ul class="uk-list uk-list-line">
+        <li><i class="uk-icon-link"></i> <a href="#">编程</a></li>
+        <li><i class="uk-icon-link"></i> <a href="#">思考</a></li>
+        <li><i class="uk-icon-link"></i> <a href="#">读书</a></li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -96,10 +99,10 @@
 
         },
         user: {
-          image:'',
-          name:''
+          image: '',
+          name: ''
         },
-        comments:[]
+        comments: []
       }
     }
   }

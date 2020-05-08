@@ -18,14 +18,14 @@
                 <a href="#0"><i class="uk-icon-user"></i> </a>
                 <div class="uk-dropdown uk-dropdown-navbar">
                   <ul class="uk-nav uk-nav-navbar">
-                    <li><a href="/signout"><i class="uk-icon-sign-out"></i> 登出</a></li>
+                    <li> <router-link to="/foo"><i class="uk-icon-sign-out"></i> 登出</router-link></li>
                   </ul>
                 </div>
               </li>
             </div>
             <div v-else>
-              <li><a href="/signin"><i class="uk-icon-sign-in"></i> 登陆</a></li>
-              <li><a href="/register"><i class="uk-icon-edit"></i> 注册</a></li>
+              <li><router-link to="/signin"><i class="uk-icon-sign-in"></i> 登陆</router-link></li>
+              <li><router-link to="/register"><i class="uk-icon-edit"></i> 注册</router-link></li>
             </div>
           </ul>
         </div>

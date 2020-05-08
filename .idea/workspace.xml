@@ -3,54 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5ed065ca-0641-49d4-92fd-03fa0148fa4d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.postcssrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/check-versions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/vue-loader.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/webpack.base.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/webpack.dev.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/build/webpack.prod.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/config/dev.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/config/prod.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/config/test.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/image/computer1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/image/computer2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/image/computer3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/image/computer4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/image/gen.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/image/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/image/pad.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/image/tpad (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/image/tpad (2).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/image/tpad (3).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/test/e2e/custom-assertions/elementCount.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/test/e2e/nightwatch.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/test/e2e/runner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/test/e2e/specs/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/test/unit/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/test/unit/jest.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/test/unit/setup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/test/unit/specs/HelloWorld.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/app.b22ce679862c47a75225.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.b22ce679862c47a75225.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/vendor.4ad267b4786a3ebd3327.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/vendor.4ad267b4786a3ebd3327.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fontend/src/views/blog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/fontend/src/views/blog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fontend/src/views/blogbase.vue" beforeDir="false" afterPath="$PROJECT_DIR$/fontend/src/views/blogbase.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fontend/src/views/blogs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/fontend/src/views/blogs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fontend/src/views/register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/fontend/src/views/register.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +72,7 @@
       <workItem from="1587965902235" duration="5182000" />
       <workItem from="1588034088467" duration="5042000" />
       <workItem from="1588901139589" duration="10297000" />
-      <workItem from="1588918615525" duration="1586000" />
+      <workItem from="1588918615525" duration="3924000" />
     </task>
     <servers />
   </component>

@@ -3,8 +3,54 @@
   <component name="ChangeListManager">
     <list default="true" id="5ed065ca-0641-49d4-92fd-03fa0148fa4d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/config/test.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/image/computer1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/image/computer2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/image/computer3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/image/computer4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/image/gen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/image/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/image/pad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/image/tpad (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/image/tpad (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/image/tpad (3).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/test/e2e/custom-assertions/elementCount.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/test/e2e/nightwatch.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/test/e2e/runner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/test/e2e/specs/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/test/unit/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/test/unit/jest.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/test/unit/setup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/test/unit/specs/HelloWorld.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/app.b22ce679862c47a75225.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/app.b22ce679862c47a75225.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/vendor.4ad267b4786a3ebd3327.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/vendor.4ad267b4786a3ebd3327.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +61,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -30,7 +77,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fontend/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\go_code\src\myproject\fontend\src" />
+      <recent name="D:\go_code\src\myproject\fontend\src\assets" />
+      <recent name="D:\go_code\src\myproject\fontend\src\assets\css" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -56,7 +113,10 @@
       <updated>1587868662431</updated>
       <workItem from="1587868668437" duration="2769000" />
       <workItem from="1587947210252" duration="10406000" />
-      <workItem from="1587965902235" duration="3910000" />
+      <workItem from="1587965902235" duration="5182000" />
+      <workItem from="1588034088467" duration="5042000" />
+      <workItem from="1588901139589" duration="10297000" />
+      <workItem from="1588918615525" duration="1586000" />
     </task>
     <servers />
   </component>
@@ -68,14 +128,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587868856556" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587957623376">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1588919036197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587957623376" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588919036197" />
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587947216915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587947216915" />
+    <state x="555" y="290" width="672" height="678" key="search.everywhere.popup" timestamp="1588903864220">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="555" y="290" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588903864220" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

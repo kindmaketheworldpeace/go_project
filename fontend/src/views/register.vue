@@ -1,7 +1,7 @@
 <template>
   <div class="uk-width-2-3">
     <h1>欢迎注册！</h1>
-    <form  class="uk-form uk-form-stacked">
+    <form class="uk-form uk-form-stacked">
       <div class="uk-alert uk-alert-danger uk-hidden"></div>
       <div class="uk-form-row">
         <label class="uk-form-label">名字:</label>
@@ -28,13 +28,15 @@
         </div>
       </div>
       <div class="uk-form-row">
-        <button type="submit" class="uk-button uk-button-primary"><i class="uk-icon-user"></i> 注册</button>
+        <button @click="register()" type="submit" class="uk-button uk-button-primary"><i class="uk-icon-user"></i> 注册
+        </button>
       </div>
     </form>
   </div>
 </template>
 
 <script>
+  import md5 from 'js-md5'
   export default {
     name: "register",
     data() {
@@ -45,8 +47,31 @@
         password2: ''
       }
     },
-    methods:{
-      
+    methods: {
+      register: function () {
+        if (this.password1!==this.password2) {
+             this.$message.error("密码不一致！")
+             return
+        }
+        let params = {
+          email: this.email,
+          name: this.name,
+          password1: md5(this.password1),
+          password2: md5(this.password1)
+        }
+        this.$store.dispatch('login/register', params).then(res => {
+
+          if(res.data.result){
+            this.$message.success("注册成功！")
+             this.$router.push({path:'/signin'})
+          }else {
+            this.$message.error("注册失败！" +res.data.message)
+          }
+          }
+        )
+
+      }
+
     }
   }
 </script>

@@ -13,7 +13,7 @@
         </ul>
         <div class="uk-navbar-flip">
           <ul class="uk-navbar-nav">
-            <div v-if="user!==''">
+            <div v-if="login_user!==''">
               <li class="uk-parent" data-uk-dropdown>
                 <a href="#0"><i class="uk-icon-user"></i> </a>
                 <div class="uk-dropdown uk-dropdown-navbar">
@@ -63,13 +63,17 @@
 </template>
 
 <script>
+  import {mapGetters} from 'vuex'
   export default {
     name: 'blogbase',
     data() {
       return {
-        user: ""
       }
-    }
+    },
+     computed: {
+      ...mapGetters({'login_user':'login/get_login_user'}),
+
+    },
   }
 </script>
 

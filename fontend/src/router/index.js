@@ -14,6 +14,11 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+     {
+      path: '/',
+      name: 'blogs',
+      redirect: '/blogs'
+    },
     {
       path: '/signin',
       name: 'signin',
@@ -23,7 +28,7 @@ export default new Router({
       name: 'blogbase',
       component: blogbase,
       children: [{
-        path: '/blog',
+        path: '/blog/:id',
         name: 'blog',
         component: blog
       }, {

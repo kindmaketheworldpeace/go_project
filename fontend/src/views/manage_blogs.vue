@@ -3,9 +3,9 @@
     <div class="uk-width-1-1 uk-margin-bottom">
       <div class="uk-panel uk-panel-box">
         <ul class="uk-breadcrumb">
-          <li><a href="/manage/comments">评论</a></li>
+          <li><router-link to="/manage_comments">评论</router-link></li>
           <li class="uk-active"><span>日志</span></li>
-          <li><a href="/manage/users">用户</a></li>
+          <li><router-link to="/manage_users">用户</router-link></li>
         </ul>
       </div>
     </div>
@@ -13,12 +13,12 @@
     <div id="error" class="uk-width-1-1">
     </div>
 
-    <div id="loading" class="uk-width-1-1 uk-text-center">
+    <div id="loading"  v-if="is_finish" class="uk-width-1-1 uk-text-center">
       <span><i class="uk-icon-spinner uk-icon-medium uk-icon-spin"></i> 正在加载...</span>
     </div>
 
-    <div id="vm" class="uk-width-1-1">
-      <a href="/manage/blogs/create" class="uk-button uk-button-primary"><i class="uk-icon-plus"></i> 新日志</a>
+    <div  class="uk-width-1-1">
+      <router-link to="/manage_blog_edit" class="uk-button uk-button-primary"><i class="uk-icon-plus"></i> 新日志</router-link>
 
       <table class="uk-table uk-table-hover">
         <thead>
@@ -30,15 +30,15 @@
         </tr>
         </thead>
         <tbody>
-        <tr v-for="blog in blogs">
+        <tr v-for=" (i) in blogs">
           <td>
-            <a target="_blank">{{blog.name}}</a>
+            <a target="_blank">{{i.Name}}</a>
           </td>
           <td>
-            <a target="_blank" href=''>{{blog.user_name}}</a>
+            <a target="_blank" href=''>{{i.User_name}}</a>
           </td>
           <td>
-            <span>{{blog.created_at.toDateTime()}}</span>
+            <span>{{i.Created_at}}</span>
           </td>
           <td>
             <a href="#0" @click="" ><i class="uk-icon-edit"></i></a>
@@ -54,13 +54,42 @@
 </template>
 
 <script>
+   import {mapGetters} from 'vuex'
   export default {
     name: "manage_blogs",
     data() {
       return {
-        blogs: []
+        blogs: [],
+        is_finish:false
       }
-    }
+    },
+    methods: {
+      get_blogs: function () {
+        this.is_finish=!this.is_finish
+        const login_user = this.login_user
+        let params = {
+          user_id: login_user.user_id,
+        }
+        this.$store.dispatch('blog/get_blogs', params).then(res => {
+            if (res.data.result) {
+                this.blogs = res.data.blogs
+              console.log(this.blogs)
+
+            } else {
+              this.$message.error("失败！" + res.data.message)
+            }
+            this.is_finish=!this.is_finish
+          }
+        )
+      }
+    },
+    created() {
+      this.get_blogs()
+    },
+    computed: {
+      ...mapGetters({'login_user':'login/get_login_user'}),
+
+    },
   }
 </script>
 

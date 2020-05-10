@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="uk-form-row">
-          <button type="submit" class="uk-width-1-1 uk-button uk-button-primary uk-button-large"><i
+          <button type="button" @click="signin" class="uk-width-1-1 uk-button uk-button-primary uk-button-large"><i
             class="uk-icon-sign-in"></i> 登录
           </button>
         </div>
@@ -30,6 +30,7 @@
 </template>
 
 <script>
+  import md5 from 'js-md5'
   export default {
     name: "signin",
     data () {
@@ -37,6 +38,26 @@
         email:'',
         passwd:''
       }
+    },
+     methods: {
+      signin: function () {
+        let params = {
+          email: this.email,
+          passwd: md5(this.passwd),
+        }
+        this.$store.dispatch('login/login', params).then(res => {
+
+          if(res.data.result){
+            this.$message.success("登陆成功！")
+             this.$router.push({path:'/blogs'})
+          }else {
+            this.$message.error("登陆失败！" +res.data.message)
+          }
+          }
+        )
+
+      }
+
     }
   }
 </script>

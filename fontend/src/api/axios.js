@@ -14,25 +14,12 @@ axios.interceptors.response.use(response => {
   }
   return response
 }, error => {
-  // 无权限
-  if (error.response.status == 403) {
-    return {
-      code: 403,
-      message: error.response.data.message,
-      error: error,
-      result: false
-    }
-  }
+
   // 未认证
   if (error.response.status == 401) {
     window.location.href = "http://127.0.0.1:8000/#/login"
   }
-  return {
-    code: 500,
-    message: '未知错误，请刷新重试',
-    error: error,
-    result: false
-  }
+ return error.response
 });
 Vue.prototype.$http = axios;
 export const $axios = axios

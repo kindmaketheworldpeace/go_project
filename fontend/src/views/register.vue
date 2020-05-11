@@ -47,9 +47,6 @@
         password2: ''
       }
     },
-<<<<<<< HEAD
-    methods:{
-=======
     methods: {
       register: function () {
         if (this.password1!==this.password2) {
@@ -74,9 +71,7 @@
         )
 
       }
->>>>>>> f6829315948452dccf1bb1927ca494a8cb7720fb
 
-    }
   }
 </script>
 

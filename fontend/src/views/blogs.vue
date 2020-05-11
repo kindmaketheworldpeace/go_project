@@ -1,19 +1,19 @@
 <template>
   <div style="width: 100%">
-    <div class="uk-width-medium-3-4">
+    <div style="display: inline-block" class="uk-width-medium-3-4">
       <div v-for=" (blog,index) in blogs">
         <article class="uk-article">
-          <h2><a href="">{{ blog.name }}</a></h2>
-          <p class="uk-article-meta">发表于{{ blog.created_at}}</p>
-          <p>{{ blog.summary }}</p>
-          <p><a :href='blog.id'>继续阅读 <i class="uk-icon-angle-double-right"></i></a></p>
+          <h2><a href="">{{ blog.Name }}</a></h2>
+          <p class="uk-article-meta">发表于{{ blog.Created_at}}</p>d
+          <p>{{ blog.Summary }}</p>
+          <p><router-link :to="'/blog/'+blog.I">继续阅读 <i class="uk-icon-angle-double-right"></i></router-link></p>
         </article>
         <hr class="uk-article-divider">
       </div>
       {{ page }}
-    </div>
 
-    <div style="float: right;width: 24%" class="uk-width-medium-1-4">
+    </div>
+ <div style="float: right;width: 24%" class="uk-width-medium-1-4">
       <div class="uk-panel uk-panel-header">
         <h3 class="uk-panel-title">友情链接</h3>
         <ul class="uk-list uk-list-line">
@@ -32,6 +32,7 @@
         </ul>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -41,18 +42,27 @@
     data() {
       return {
         blogs: [],
-        page: ''
+        page: 1
 
       }
     },
     methods: {
       get_blogs: function () {
-
+        let params = {
+        }
+        this.$store.dispatch('blog/get_blogs', params).then(res => {
+            if (res.data.result) {
+                this.blogs = res.data.blogs
+            } else {
+              this.$message.error("失败！" + res.data.message)
+            }
+          }
+        )
       }
     },
     created() {
       this.get_blogs()
-    }
+    },
   }
 </script>
 
